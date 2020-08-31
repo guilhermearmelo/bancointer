@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "4d99f562-b32c-457d-9d7d-08d731d468e8",
+		"name": "API BANCO INTER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CRUD | Criar usuário",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Melo1\",\r\n    \"email\": \"guilhermearmelo1@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD | Lista todos os usuários",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Melo\",\r\n    \"email\": \"guilhermearmelo@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD | Lista usuário por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Melo\",\r\n    \"email\": \"guilhermearmelo@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD | Remove usuário",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Melo\",\r\n    \"email\": \"guilhermearmelo@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD | Atualiza usuário",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Melo\",\r\n    \"email\": \"guilhermearmelo@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CRUD | Remove usuário pelo ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Melo\",\r\n    \"email\": \"guilhermearmelo@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuario/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuario",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DIGITO UNICO | Calcular Digito Único por ID do Usuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"n\": \"33\",\r\n    \"k\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/calcular/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calcular",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DIGITO UNICO | Calcular Digito Único Sem Usuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"n\": \"1123\",\r\n    \"k\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/calcular/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calcular",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DIGITO UNICO | Retorna Informações Individuais de Digito Único por ID do Usuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Guilherme Melo\",\r\n    \"email\": \"guilhermearmelo@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/info/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"info",
+						"27"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
